@@ -26,7 +26,8 @@ n_values = []
 time_values = []
 
 for i in range(1, 500):
-    elapsed_time = timeit.timeit('fib2({})'.format(i), globals=globals(), number=1)
+    #elapsed_time = timeit.timeit('fib2({})'.format(i), globals=globals(), number=1)
+    elapsed_time = timeit.timeit('fib({})'.format(i), globals=globals(), number=1)
     n_values.append(i)
     time_values.append(elapsed_time)
 
