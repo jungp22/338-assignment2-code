@@ -1,4 +1,3 @@
-# Write fib2(n)
 def fib_memo(n,cache={}):
   #1
   if n == 0 or n == 1:
@@ -11,5 +10,3 @@ def fib_memo(n,cache={}):
     fibonacci_compute = fib_memo(n-1) + fib_memo(n-2)
     cache.update({n:fibonacci_compute})
     return fibonacci_compute
-
-print(fib_memo(35))
